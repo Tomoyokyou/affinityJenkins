@@ -1,0 +1,16 @@
+# Explanation of Final Script
+
+#!/bin/sh
+# Run the nosetests and create the test.output
+/usr/local/bin/nosetests tests/ --with-xunit --all-modules --traverse-namespace --with-coverage --cover-package=affinityJenkins --cover-inclusive &> test.output
+# Check whether there is data about the coverage of affinityJenkins to report
+/usr/local/bin/python3 -m coverage xml --include=affinityJenkins
+# Analyze the codes of affinityJenkins and list all the issues which can be solved to improve the codes.
+/usr/local/bin/pylint -f parseable -d I0011,R0801 affinityJenkins | tee pylint.out
+
+
+#  Explain what you see inside of pylint.out.
+1. The most issues are about adding docstrings for modules, classes and functions.
+2. Some issues are about how to make code look more well-structured.
+
+

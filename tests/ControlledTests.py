@@ -2,7 +2,7 @@ import unittest
 import affinityJenkins.compute_highest_affinity as compute_highest_affinity
 
 class ControlledTests(unittest.TestCase):
-    
+
     def test1(self):
         site_list = ["a.com", "b.com", "a.com", "b.com", "a.com", "c.com"]
         user_list = ["andy", "andy", "bob", "bob", "charlie", "charlie"]

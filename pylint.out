@@ -1,0 +1,22 @@
+************* Module affinityJenkins
+__init__.py:1: [C0103(invalid-name), ] Invalid module name "affinityJenkins"
+************* Module affinityJenkins.compute_highest_affinity
+compute_highest_affinity.py:2: [C0303(trailing-whitespace), ] Trailing whitespace
+compute_highest_affinity.py:13: [C0301(line-too-long), ] Line too long (101/100)
+compute_highest_affinity.py:33: [C0326(bad-whitespace), ] Exactly one space required around comparison
+                    if site1>site2:
+                            ^
+compute_highest_affinity.py:41: [C0305(trailing-newlines), ] Trailing newlines
+compute_highest_affinity.py:1: [C0111(missing-docstring), ] Missing module docstring
+compute_highest_affinity.py:8: [C0111(missing-docstring), highest_affinity] Missing function docstring
+compute_highest_affinity.py:16: [C0200(consider-using-enumerate), highest_affinity] Consider using enumerate instead of iterating with range and len
+compute_highest_affinity.py:8: [W0613(unused-argument), highest_affinity] Unused argument 'time_list'
+************* Module affinityJenkins.tests.ControlledTests
+tests/ControlledTests.py:15: [C0305(trailing-newlines), ] Trailing newlines
+tests/ControlledTests.py:1: [C0111(missing-docstring), ] Missing module docstring
+tests/ControlledTests.py:4: [C0111(missing-docstring), ControlledTests] Missing class docstring
+tests/ControlledTests.py:6: [C0111(missing-docstring), ControlledTests.test1] Missing method docstring
+
+------------------------------------------------------------------
+Your code has been rated at 5.36/10 (previous run: 5.36/10, +0.00)
+
